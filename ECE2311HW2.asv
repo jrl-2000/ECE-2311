@@ -1,0 +1,7 @@
+t = [-15 : 0.05 : 15];
+y = (sin(t)/t);
+
+plot(t,y,0,1, ".")
+xlabel ("Seconds (s)"); ylabel
+
+
