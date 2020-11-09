@@ -1,0 +1,19 @@
+>> clear all
+>> [b, a] = butter(1, 0.01);
+>> t = 0: 0.001: 10;
+>> f = 10; x = sin(2*pi*f*t);
+>> plot(t, x)
+>> plot(t, x)
+>> y = filter(b, a, x);
+>> plot(t, x, ‘b’), hold on, plot(t, y, ‘m’), hold off
+ plot(t, x, ‘b’), hold on, plot(t, y, ‘m’), hold off
+            ↑
+Error: Invalid text character. Check for unsupported symbol, invisible character, or pasting of non-ASCII characters.
+ 
+>> 
+>> plot(t, x, b), hold on, plot(t, y, m), hold off
+Error using plot
+Data must be a single input of y-values or one or more pairs of x- and y-values.
+ 
+>> plot(t, x, 'b'), hold on, plot(t, y, 'm'), hold off
+>> 
